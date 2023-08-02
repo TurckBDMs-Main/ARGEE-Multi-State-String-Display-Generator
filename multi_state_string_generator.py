@@ -29,7 +29,7 @@ if path.endswith('.txt') or path.endswith('.st'):
             continue
         elif foundline and not 'end_enum' in line:
             outputstring =  (outputstring + str(i) +',"'+line[1:].replace('_',' ').upper()+'","black","transparent",').replace('\n','')
-            
+            i+=1
         
             
     print(prefix+outputstring[:-1]+suffix)
